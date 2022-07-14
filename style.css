@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Moonrocks&family=Titan+One&display=swap");
+
+:root {
+  --primary-color: #c1c7ff;
+  --primary-color-lighter: #ff9d61;
+  --secondary-color: #00ca00;
+  --secondary-color-lighter: #75ff75;
+  --font-style: Fredoka One;
+  font-size: 18px;
+}
+* {
+  font-family: var(--font-style);
+  text-decoration: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  height: 80px;
+}
+.title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-left: 5px;
+  align-self: flex-end;
+
+  margin-bottom: -30px;
+}
+.title > h1 > span {
+  color: var(--primary-color);
+}
+.nav {
+  align-self: flex-end;
+
+  margin-right: 5px;
+}
+.nav > nav > a {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 2px;
+}
