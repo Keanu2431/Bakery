@@ -7,6 +7,7 @@
   --secondary-color-lighter: #75ff75;
   --font-style: Fredoka One;
   font-size: 18px;
+  text-transform: capitalize;
 }
 * {
   font-family: var(--font-style);
@@ -30,6 +31,10 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin: auto;
+}
+.smaller-image-text {
+  text-align: center;
+  font-size: 1.5rem;
 }
 .image-text {
   text-align: center;
@@ -56,7 +61,7 @@ body {
     opacity: 0;
   }
 }
-.image {
+.big-image {
   width: 90%;
   display: block;
   height: 600px;
@@ -97,3 +102,42 @@ body {
   color: var(--primary-color);
   margin: 2px;
 }
+/* grids */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  top: 24px;
+}
+#row-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+#row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+#row-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.item-container {
+  text-align: center;
+}
+
+.item-image {
+  width: 250px;
+  height: 250px;
+}
+.item-title {
+  font-size: 1rem;
+}
+/* footer */
