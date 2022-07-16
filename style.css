@@ -11,11 +11,65 @@
 * {
   font-family: var(--font-style);
   text-decoration: none;
+  color: var(--primary-color);
 }
 html,
 body {
   margin: 0;
   padding: 0;
+}
+.fade-in {
+  animation: fadeIn 2s;
+}
+/* @keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  } 
+}*/
+.image-holder {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
+}
+.image-holder img:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+.image-holder img:nth-of-type(2) {
+  z-index: 10;
+}
+.image-holder img:nth-of-type(n + 3) {
+  display: none;
+}
+
+@keyframes fader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.image {
+  width: 90%;
+  display: block;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.small-text {
+  font-size: 0.5rem;
 }
 .header {
   display: flex;
