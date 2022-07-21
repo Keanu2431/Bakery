@@ -14,3 +14,5 @@ window.addEventListener(
   },
   false
 );
+//bs5 carousel
+const carousel = new bootstrap.Carousel("#myCarousel");
